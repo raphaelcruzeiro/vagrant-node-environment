@@ -15,7 +15,7 @@ node default {
   include '::mongodb::server'
 
   package { 'git':
-    ensure => 'installed',
+    ensure => 'latest',
     require => Exec["aptitudeUpdate"],
   }
 
